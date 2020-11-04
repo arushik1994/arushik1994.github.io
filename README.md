@@ -1,4 +1,4 @@
-## Welcome to GitHub Pages
+## Welcome to Data Mining
 
 You can use the [editor on GitHub](https://github.com/arushik1994/arushik1994.github.io/edit/main/README.md) to maintain and preview the content for your website in Markdown files.
 
