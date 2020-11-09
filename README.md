@@ -1,6 +1,6 @@
 ## Welcome to Data Mining
 
-[Link to notebook](https://arushik1994.github.io/Project_1.html)
+[Click here to view Project 1](https://arushik1994.github.io/Project_1.html)
 
 You can use the [editor on GitHub](https://github.com/arushik1994/arushik1994.github.io/edit/main/README.md) to maintain and preview the content for your website in Markdown files.
 
@@ -25,7 +25,7 @@ Syntax highlighted code block
 
 **Bold** and _Italic_ and `Code` text
 
-![alt text](<image.png>)
+
 [Link](url) and ![Image](src)
 ```
 
