@@ -1,40 +1,9 @@
-## Welcome to Data Mining
+## Welcome
 
-[Click here to view Project 1](https://arushik1994.github.io/Project_1.html)
+## DATS 6103 - Individual Project 2 - Arushi Kapoor 
 
-You can use the [editor on GitHub](https://github.com/arushik1994/arushik1994.github.io/edit/main/README.md) to maintain and preview the content for your website in Markdown files.
+### Exploring World Economic Indicators, 2015-2019
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+The purpose of this project is to explore the relationship among economic indicators such as Labor Force, Unemployment Rates, Inflation Rates, Population, and GDP Per Capita across the world for the time period, 2015 to 2019. Historically, inflation and unemployment maintain an inverse relationship. Low levels of unemployment correspond with higher inflation, while high rates of unemployment correspond with lower rates of inflation or even deflation. I have explored whether the same still holds true for nations in the given period.
 
-### Markdown
-
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
-
-```markdown
-Syntax highlighted code block
-
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/arushik1994/arushik1994.github.io/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+[Click here to view the project](https://arushik1994.github.io/DATS%206103%20-%20Individual%20Project%202%20-%20Arushi%20Kapoor.html)
