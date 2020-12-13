@@ -14,4 +14,4 @@ The purpose of this project is to explore the relationship among economic indica
 
 The purpose of this project is to explore the stock data of six major companies, Facebook, Amazon, Apple, Microsoft, Google and Tesla, also known as FAAMGT, since 2000. The project attempts to explore Trends in Adjusted Closing Prices, Moving Averages and Daily Returns, Correlations among Daily Returns, Risk Analysis and any Future Predictions. 
 
-[Click here to view the project](https://arushik1994.github.io/DATS%206103%20-%20Individual%20Project%203%20-%20Arushi%20Kapoor.html)
+[Click here to view the project](https://arushik1994.github.io/DATS 6103 - Individual Project 3 - Arushi Kapoor.html)
