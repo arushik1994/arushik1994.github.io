@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=1024, initial-scale=1.0">
+    <title>Overview</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://www.gstatic.com/charts/loader.js"></script>
+    <script>
+        google.charts.load('current', {'packages': ['corechart', 'geochart']});
+        google.charts.setOnLoadCallback(drawAllSheets);
+
+        function drawAllSheets() {
+            drawSheetName('totalspending', 'SELECT A,G,O', totalSpendingResponseHandler);
+            drawSheetName('militaryspending', 'SELECT A,G,O', educSpendingResponseHandler);
+            drawSheetName('militaryspending', 'SELECT A,G,W', healthSpendingResponseHandler);
+            drawSheetName('countries', 'SELECT A,B,C,D,E,F,G,H,I,J,K', lineGDPResponseHandler);
+            drawSheetName('countries', 'SELECT M,N,O,P,Q,R,S,T,U,V,W', lineSpendingResponseHandler);
+        } //drawAllSheets
+
+        function drawSheetName(sheetName, query, responseHandler){
+            var queryString =encodeURIComponent(query);
+            var query = new google.visualization.Query(
+                'https://docs.google.com/spreadsheets/d/1bnXp3KjjQwR_d0VO_wCrhURjjAzWk60QoO0QnJ9dQ-c/gviz/tq?sheet='
+                + sheetName + '&headers=1&tq=' + queryString);
+
+            query.send(responseHandler);
+        } //drawSheetName
+
+        function checkError(response){
+            if (response.isError()) {
+                alert('Error in query: ' + response.getMessage() + ' ' + response.getDetailedMessage());
+                return;
+            }
+
+        } //checkError
+
+        function totalSpendingResponseHandler(response){
+            checkError(response);
+            var data = response.getDataTable();
+            data.sort({column: 1, desc: true});
+
+            var options = {
+                legend: {position: 'top', maxLines: 3},
+                bars: 'horizontal', 
+                isStacked: true,
+                annotations: {alwaysOutside: true}, 
+                title: 'Total Spending vs. Total GDP',
+                vAxis: {title: 'Country'}, 
+                hAxis: {title: 'Spending in Millions($)'}
+            };
+
+            var chart = new google.visualization.BarChart(document.getElementById("total_spending_div"));
+            chart.draw(data, options);
+        } //totalSpendingResponseHandler
+
+        function educSpendingResponseHandler(response){
+            checkError(response);
+            var data = response.getDataTable();
+            data.sort({column: 1, desc: true});
+
+            var options = { 
+                legend: {position: 'top', maxLines: 3},
+                annotations: {alwaysOutside: true}, 
+                title: 'Military Spending vs. Education Spending',
+                colors: ['blue','green'],
+                vAxis: {title: 'Spending in Millions($)'}, 
+                hAxis: {title: 'Country'}
+            };
+
+            var chart = new google.visualization.ColumnChart(document.getElementById("educ_spending_div"));
+            chart.draw(data, options);
+        } //educSpendingResponseHandler
+
+        function healthSpendingResponseHandler(response){
+            checkError(response);
+            var data = response.getDataTable();
+            data.sort({column: 1, desc: true});
+
+            var options = { 
+                legend: {position: 'top', maxLines: 3}, 
+                annotations: {alwaysOutside: true}, 
+                colors: ['blue','green'],
+                title: 'Overall Spending',
+                vAxis: {title: 'Spending in Millions($)'}, 
+                hAxis: {title: 'Country'}
+            };
+
+            var chart = new google.visualization.ColumnChart(document.getElementById("health_spending_div"));
+            chart.draw(data, options);
+        } //healthSpendingResponseHandler
+
+        function lineGDPResponseHandler(response){
+            checkError(response);
+            var data = response.getDataTable();
+
+            var options = {  
+                legend: {position: 'top', maxLines: 3}, 
+                title: 'Total GDP',
+                vAxis: {title: 'GDP in Millions($)'}, 
+                hAxis: {title: 'Country'}
+            };
+
+            var chart = new google.visualization.LineChart(document.getElementById("total_gdp_div"));
+            chart.draw(data, options);
+        } //lineGDPResponseHandler
+
+        function lineSpendingResponseHandler(response){
+            checkError(response);
+            var data = response.getDataTable();
+
+            var options = { 
+                legend: {position: 'top', maxLines: 3}, 
+                title: 'Overall Spending',
+                vAxis: {title: 'Spending in Millions($)'}, 
+                hAxis: {title: 'Years'}
+            };
+
+            var chart = new google.visualization.LineChart(document.getElementById("overall_spending_div"));
+            chart.draw(data, options);
+        } //lineSpendingResponseHandler
+
+
+    </script>
+</head>
+<body>
+    <div id="main">
+        <div id="header">
+            <div id="logo">
+                <div id="logo_text">
+                    <h1><a href="index.html"></a></h1>
+                </div><!-- logo_text -->
+            </div><!-- logo-->
+            <div id="menubar">
+                <ul id="menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li class="selected"><a href="overview.html">Overview</a></li>
+                    <li><a href="percapita.html">Per Capita</a></li>
+                    <li><a href="growth.html">Growth</a></li>
+                    <li><a href="prediction.html">Prediction</a></li>
+                    <li><a href="conclusion.html">Conclusion</a></li>
+                </ul><!-- menu -->  
+            </div><!-- menu -->
+        </div><!-- header -->
+        <div id="site_content">
+            <div id="content">
+    <h3 style='text-align:center'>Overview</h3>
+    <p>
+        <strong>This section explores the nations' overall spending in comparison to its total GDP as well as its' overall military spending in comparison to its' overall health and education expenditures.</strong>
+    </p>
+    <h3 style='text-align:center'>Total GDP</h3>
+    <div id="total_gdp_div" style="width: 900px; height:500px;"></div>
+    <h3 style='text-align:center'>Overall Spending</h3>
+    <div id="overall_spending_div" style="width: 900px; height:500px;"></div>
+    <h3 style='text-align:center'>Total Spending vs. Total GDP</h3>
+    <div id="total_spending_div" style="width: 900px; height:500px;"></div>
+    <h3 style='text-align:center'>Military Spending vs. Education Spending</h3>
+    <div id="educ_spending_div" style="width: 900px; height:500px;"></div>
+    <h3 style='text-align:center'>Military Spending vs. Healthcare Spending</h3>
+    <div id="health_spending_div" style="width: 900px; height:500px;"></div>
+    <h3 style='text-align:center'>Key Insights</h3>
+    <p>
+        
+    </p>
+</div><!-- content -->
+</div><!-- site_content -->
+<div id="content_footer">
+    <div id="footer">
+        &copy; <script>var d = new Date(); document.write(d.getFullYear());</script> 
+        | <a href="http://validator.w3.org/check?uri=referer">HTML5</a>
+        | <a href="http://jigsaw.w3.org/css-validator/check/referer">CSS3</a>
+        | Arushi Kapoor
+    </div><!-- footer -->
+</div><!-- content_footer --> 
+</div> <!-- main -->
+</body>
+</html>
