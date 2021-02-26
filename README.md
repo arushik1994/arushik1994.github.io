@@ -23,4 +23,4 @@ The purpose of this project is to explore the stock data of six major companies,
 
 The purpose of this project is to analyze the military, education and healthcare expenditure of United States, United Kingdom, Brazil, Russia, Japan, Canada, China, France, Germany and Australia, for the time period, 2014-2018
 
-[Click here to view the project]
+[Click here to view the project](https://arushik1994.github.io/index.html)
