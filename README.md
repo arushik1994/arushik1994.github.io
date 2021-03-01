@@ -21,6 +21,6 @@ The purpose of this project is to explore the stock data of six major companies,
 
 ### Exploring Gross Domestic Product and Spending: Military, Healthcare and Education (2014-2018)
 
-The purpose of this project is to analyze the military, education and healthcare expenditure of United States, United Kingdom, Brazil, Russia, Japan, Canada, China, France, Germany and Australia, for the time period, 2014-2018
+The purpose of this project is to analyze the military, education and healthcare expenditure of United States, United Kingdom, Brazil, Russia, Japan, Canada, China, France, Germany and Australia, for the time period, 2014-2018. 
 
 [Click here to view the project](https://arushik1994.github.io/DATS-6401---Individual-Project---Arushi-Kapoor-/index.html)
