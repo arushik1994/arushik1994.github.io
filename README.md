@@ -24,3 +24,12 @@ The purpose of this project is to explore the stock data of six major companies,
 The purpose of this project is to analyze the military, education and healthcare expenditure of United States, United Kingdom, Brazil, Russia, Japan, Canada, China, France, Germany and Australia, for the time period, 2014-2018. 
 
 [Click here to view the project](https://arushik1994.github.io/DATS-6401---Individual-Project---Arushi-Kapoor-/index.html)
+
+
+## DATS 6401 - Final Project - Arushi Kapoor 
+
+### Chemicals in Cosmetics: An Analysis
+
+The primary objective of this project is to visualize the type of cosmetic products and their chemical ingredients, as reported to the California Safe Cosmetics Program. The factors being analyzed are product categories, reported chemical ingredients, the number of reported chemicals for each product, and product discontinuation or reformulation.
+
+[Click here to view the project](https://arushik1994.github.io/)
