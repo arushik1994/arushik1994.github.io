@@ -32,4 +32,4 @@ The purpose of this project is to analyze the military, education and healthcare
 
 The primary objective of this project is to visualize the type of cosmetic products and their chemical ingredients, as reported to the California Safe Cosmetics Program. The factors being analyzed are product categories, reported chemical ingredients, the number of reported chemicals for each product, and product discontinuation or reformulation.
 
-[Click here to view the project](https://arushik1994.github.io/)
+[Click here to view the project](https://arushik1994.github.io/Cosmetics-Analysis/index.html)
