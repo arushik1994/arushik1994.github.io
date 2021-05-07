@@ -2,7 +2,12 @@
 
 ## DATS 6103 - Individual Project 1 - Arushi Kapoor 
 
-[Click here to view the project](https://arushik1994.github.io)
+### Analyzing Military Expenditure, 2013-2019
+
+The purpose of this project is to explore the military spending of 10 nations, as assigned, for atleast five years of data no older than 2010.
+The given project explores the military spending of United States of America, China, Russia, Germany, United Kingdom, France, Italy, Saudi Arabia, South Korea and Israel for the time period 2013 - 2019
+
+[Click here to view the project](https://arushik1994.github.io/DATS%206103%20-%20Individual%20Project%201%20-%20Arushi%20Kapoor%20.html)
 
 ## DATS 6103 - Individual Project 2 - Arushi Kapoor 
 
