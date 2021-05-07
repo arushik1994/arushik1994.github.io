@@ -1,5 +1,9 @@
 ## Welcome
 
+## DATS 6103 - Individual Project 1 - Arushi Kapoor 
+
+[Click here to view the project](https://arushik1994.github.io)
+
 ## DATS 6103 - Individual Project 2 - Arushi Kapoor 
 
 ### Exploring World Economic Indicators, 2015-2019
