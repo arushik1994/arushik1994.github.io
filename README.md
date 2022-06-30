@@ -1,5 +1,13 @@
 ## Welcome
 
+## DATS 6501 - Data Science Capstone - Arushi Kapoor 
+
+### Does a Gender Gap Exist in the field of Data Science and Machine Learning? 
+
+This is a multi-faceted Capstone project. It is a culmination of all the Data Science knowledge and skills gained while pursuing the Master of Science, Data Science program at The George Washington University. The purpose of this project is to use Data Science for Social Good and examine the representation of women in the field in depth.
+
+[Click here to view the project](https://github.com/arushik1994/DATS-6501---Data-Science-Capstone---Arushi-Kapoor)
+
 ## DATS 6103 - Individual Project 1 - Arushi Kapoor 
 
 ### Analyzing Military Expenditure, 2013-2019
